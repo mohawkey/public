@@ -15,9 +15,6 @@ services:
       - data:/data
       - letsencrypt:/etc/letsencrypt
 
-    networks:
-      - nginx-proxy-net
-
 volumes:
   data:
   letsencrypt:
