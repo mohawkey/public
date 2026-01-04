@@ -21,8 +21,3 @@ services:
 volumes:
   data:
   letsencrypt:
-
-networks:
-  nginx-proxy-net:
-    name: nginx-proxy-net
-    external: true
