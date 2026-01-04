@@ -9,8 +9,12 @@ services:
       # Map 443 if you want to serve HTTPS directly (requires privilege or capability)
       # - "443:443"
     volumes:
-      - /mnt/tank/configs/pingora/data:/app/data
-      - /mnt/tank/configs/pingora:/app/logs
+      - pingora-data:/app/data
+      - pingora-logs:/app/logs
     environment:
       - JWT_SECRET=changeme_in_production_please
       - RUST_LOG=info
+
+volumes:
+  pingora-data:
+  pingora-logs:
