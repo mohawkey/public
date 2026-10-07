@@ -59,4 +59,3 @@ download_script() {
 download_script "install-docker.sh"
 download_script "update.sh"
 download_script "cleanup.sh"
-download_script ".profile"
