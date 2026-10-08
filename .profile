@@ -12,6 +12,9 @@ fi
 
 alias l='ls -l'
 alias ll='ls -la'
+
+alias nano='nano --tabsize=4'
+
 alias update='sudo ~/.local/bin/update.sh'
 alias cleanup='sudo ~/.local/bin/cleanup.sh'
 
