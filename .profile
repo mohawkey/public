@@ -4,6 +4,15 @@
 
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
+    
+    if [ -f "$HOME/.local/bin/update.sh" ] ; then
+        alias update='sudo ~/.local/bin/update.sh'
+    fi
+
+    if [ -f "$HOME/.local/bin/cleanup.sh" ] ; then
+        alias cleanup='sudo ~/.local/bin/cleanup.sh'
+    fi
+
 fi
 
 # --------------------------------------------------------------------------------
@@ -15,8 +24,8 @@ alias ll='ls -la'
 
 alias nano='nano --tabsize=4'
 
-alias update='sudo ~/.local/bin/update.sh'
-alias cleanup='sudo ~/.local/bin/cleanup.sh'
+# alias update='sudo ~/.local/bin/update.sh'
+# alias cleanup='sudo ~/.local/bin/cleanup.sh'
 
 # --------------------------------------------------------------------------------
 # PS1
